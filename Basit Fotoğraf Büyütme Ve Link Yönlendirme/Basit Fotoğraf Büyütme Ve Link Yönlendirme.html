@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görsel Galeri</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Görseller -->
+    <div class="photo">
+        <img src="Gorseller/fotograf1.png" alt="Fotoğraf 1" onclick="openPopup(this)">
+        <a href="https://example.com/1" target="_blank" class="link">Link 1</a>
+    </div>
+    <div class="photo">
+        <img src="Gorseller/fotograf2.png" alt="Fotoğraf 2" onclick="openPopup(this)">
+        <a href="https://example.com/2" target="_blank" class="link">Link 2</a>
+    </div>
+    <div class="photo">
+        <img src="Gorseller/fotograf3.png" alt="Fotoğraf 3" onclick="openPopup(this)">
+        <a href="https://example.com/3" target="_blank" class="link">Link 3</a>
+    </div>
+    <div class="photo">
+        <img src="Gorseller/fotograf4.png" alt="Fotoğraf 4" onclick="openPopup(this)">
+        <a href="https://example.com/4" target="_blank" class="link">Link 4</a>
+    </div>
+    <div class="photo">
+        <img src="Gorseller/fotograf5.png" alt="Fotoğraf 5" onclick="openPopup(this)">
+        <a href="https://example.com/5" target="_blank" class="link">Link 5</a>
+    </div>
+    <div class="photo">
+        <img src="Gorseller/fotograf6.png" alt="Fotoğraf 6" onclick="openPopup(this)">
+        <a href="https://example.com/6" target="_blank" class="link">Link 6</a>
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+<!-- Popup Modal - Büyütülmüş resimlerin gösterileceği pencere -->
+  <div id="popup-modal" class="popup-modal">
+    <!-- Kapatma butonu - Tıklandığında popup'ı kapatır (× işareti) -->
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <!-- Büyütülmüş resmin gösterileceği img elementi - Başlangıçta boş -->
+    <img id="popup-image" src="" alt="Büyütülmüş Görsel">
+  </div>
+  <!-- JavaScript dosyası bağlantısı - Popup fonksiyonlarını içerir -->
+  <script src="javascript.js"></script>
+</body>
+</html>
